@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{968F9902-2CB7-4F20-944C-AAB312484011}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>fitnessTracker</RootNamespace>
+    <AssemblyName>fitnessTracker</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminAccount\Activity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminAccount\Activity.Designer.cs">
+      <DependentUpon>Activity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="activityCls.cs" />
+    <Compile Include="AdminAccount\adminsList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminAccount\adminsList.Designer.cs">
+      <DependentUpon>adminsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminAccount\dashBoard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminAccount\dashBoard.Designer.cs">
+      <DependentUpon>dashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminAccount\membersLIst.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminAccount\membersLIst.Designer.cs">
+      <DependentUpon>membersLIst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customMessage.Designer.cs">
+      <DependentUpon>customMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fitnessTrackerDataSet.cs">
+      <DependentUpon>fitnessTrackerDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MemberAccount\activityGoals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberAccount\activityGoals.Designer.cs">
+      <DependentUpon>activityGoals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberAccount\activityInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberAccount\activityInfo.Designer.cs">
+      <DependentUpon>activityInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActivityList\Biking.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ActivityList\Biking.Designer.cs">
+      <DependentUpon>Biking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActivityList\JumpingRope.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ActivityList\JumpingRope.Designer.cs">
+      <DependentUpon>JumpingRope.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActivityList\Swimming.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ActivityList\Swimming.Designer.cs">
+      <DependentUpon>Swimming.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActivityList\Weightlift.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ActivityList\Weightlift.Designer.cs">
+      <DependentUpon>Weightlift.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActivityList\Yoga.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ActivityList\Yoga.Designer.cs">
+      <DependentUpon>Yoga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminAccount\AdminWelcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminAccount\AdminWelcome.Designer.cs">
+      <DependentUpon>AdminWelcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminAccount\adminDashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminAccount\adminDashBoard.Designer.cs">
+      <DependentUpon>adminDashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminAccount\adminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminAccount\adminLogin.Designer.cs">
+      <DependentUpon>adminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminAccount\adminRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminAccount\adminRegister.Designer.cs">
+      <DependentUpon>adminRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clsAdmin.cs" />
+    <Compile Include="fitnessTrackerDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>fitnessTrackerDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="mbCls.cs" />
+    <Compile Include="MemberAccount\Member.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberAccount\Member.Designer.cs">
+      <DependentUpon>Member.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberAccount\memberLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberAccount\memberLogin.Designer.cs">
+      <DependentUpon>memberLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberAccount\memberRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberAccount\memberRegister.Designer.cs">
+      <DependentUpon>memberRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberAccount\searchActivity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberAccount\searchActivity.Designer.cs">
+      <DependentUpon>searchActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberAccount\track.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberAccount\track.Designer.cs">
+      <DependentUpon>track.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActivityList\walking.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ActivityList\walking.Designer.cs">
+      <DependentUpon>walking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdminAccount\Activity.resx">
+      <DependentUpon>Activity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminAccount\adminsList.resx">
+      <DependentUpon>adminsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminAccount\dashBoard.resx">
+      <DependentUpon>dashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminAccount\membersLIst.resx">
+      <DependentUpon>membersLIst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customMessage.resx">
+      <DependentUpon>customMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberAccount\activityGoals.resx">
+      <DependentUpon>activityGoals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberAccount\activityInfo.resx">
+      <DependentUpon>activityInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActivityList\Biking.resx">
+      <DependentUpon>Biking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActivityList\JumpingRope.resx">
+      <DependentUpon>JumpingRope.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActivityList\Swimming.resx">
+      <DependentUpon>Swimming.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActivityList\Weightlift.resx">
+      <DependentUpon>Weightlift.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActivityList\Yoga.resx">
+      <DependentUpon>Yoga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminAccount\AdminWelcome.resx">
+      <DependentUpon>AdminWelcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminAccount\adminDashBoard.resx">
+      <DependentUpon>adminDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminAccount\adminLogin.resx">
+      <DependentUpon>adminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminAccount\adminRegister.resx">
+      <DependentUpon>adminRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberAccount\Member.resx">
+      <DependentUpon>Member.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberAccount\memberLogin.resx">
+      <DependentUpon>memberLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberAccount\memberRegister.resx">
+      <DependentUpon>memberRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberAccount\searchActivity.resx">
+      <DependentUpon>searchActivity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberAccount\track.resx">
+      <DependentUpon>track.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActivityList\walking.resx">
+      <DependentUpon>walking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="fitnessTrackerDataSet.xsc">
+      <DependentUpon>fitnessTrackerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="fitnessTrackerDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>fitnessTrackerDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="fitnessTrackerDataSet.xss">
+      <DependentUpon>fitnessTrackerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
